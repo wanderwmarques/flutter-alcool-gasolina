@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_aog/widgets/logo.widget.dart';
 
 void main() => runApp(MyApp());
 
@@ -22,6 +23,11 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Theme.of(context).primaryColor,
+      body: ListView(
+        children: <Widget>[
+          Logo(),
+        ],
+      ),
     );
   }
 }
