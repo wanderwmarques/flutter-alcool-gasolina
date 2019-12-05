@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'loadin-button.widget.dart';
 
 class Success extends StatelessWidget {
+  var busy = false;
   var result = "";
   Function reset;
 
@@ -32,10 +33,10 @@ class Success extends StatelessWidget {
             height: 20,
           ),
           LoadingButton(
-            text: "Calcular novamente",
-            invert: true,
             busy: false,
             func: reset,
+            text: "Calcular novamente",
+            invert: true,
           ),
         ],
       ),

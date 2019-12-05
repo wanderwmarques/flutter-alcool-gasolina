@@ -42,7 +42,7 @@ class LoadingButton extends StatelessWidget {
                     fontFamily: "Big Shoulders Display"),
                 textAlign: TextAlign.center,
               ),
-              onPressed: () {},
+              onPressed: func,
             ),
           );
   }
